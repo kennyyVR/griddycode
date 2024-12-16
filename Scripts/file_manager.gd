@@ -22,7 +22,7 @@ func _ready():
 		DiscordSDK.start_timestamp = int(Time.get_unix_time_from_system())
 	var running_on_gaming_os = OS.get_name() == "Windows"
 	if running_on_gaming_os:
-		current_dir = "C:/"
+		current_dir = "H:/"
 
 	var args = OS.get_cmdline_args()
 	var is_debug = OS.is_debug_build()
